@@ -1,0 +1,7 @@
+.bit {
+  background-color: rgb(151, 146, 146);
+  display: block;
+  border: 1px solid black;
+  float: left;
+  padding: 3px;
+}
