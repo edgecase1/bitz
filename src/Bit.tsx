@@ -12,8 +12,7 @@ function Bit({ pos, value, setBitByPos }) {
 
   return (
     <>
-      <div
-        className="bit"
+      <div className={`bit state${value ? "1" : "0"}`}
         onClick={() => {
           handleFlipClick(pos);
         }}

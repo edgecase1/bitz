@@ -1,4 +1,14 @@
 .byte {
-  border: 1px solid red;
-  padding: 5px;
+  float:left;
+  border: none;
+  background-color: silver;
+  padding: 0px;
+}
+
+.bitrow {
+  display: flex;
+}
+
+.byteDisplay {
+  display: flex;
 }

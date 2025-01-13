@@ -4,4 +4,19 @@
   border: 1px solid black;
   float: left;
   padding: 3px;
+  width: 12%;
+  font-size: x-small;
+  user-select: none;
+}
+
+.bit:hover {
+  border:1px solid red;
+}
+
+div.state0 {
+  background-color:silver;
+}
+
+div.state1 {
+  background-color:yellow;
 }

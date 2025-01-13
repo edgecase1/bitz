@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Byte.css';
 import Bit from './Bit';
 
@@ -9,7 +8,7 @@ function toInt(somebits) {
 }
 
 function toHex(someint) {
-  return '0x' + someint.toString(16).toUpperCase().padStart(2, '0');
+  return someint.toString(16).toUpperCase().padStart(2, '0');
 }
 
 function Byte({ index, value, setByteByIndex }) {
@@ -51,7 +50,10 @@ function Byte({ index, value, setByteByIndex }) {
             <Bit pos={i} value={x} setBitByPos={setBitByPos} />
           ))}
         </div>
-        <div className="byteDisplay">{showByte()}</div>
+        <div className="byteDisplay">
+          0x
+          <input value={toHex(value)}></input>
+          </div>
       </div>
     </>
   );

@@ -17,14 +17,16 @@ function App() {
 
   return (
     <>
-      <div className="byteContainer">
-        <ByteArray1 bytes={bytes} setBytes={setBytes} />
-        <img src="add.svg" onClick={addByte} />
-      </div>
       <div>
-        {bytes.map((b) => {
-          return ' ' + hex(b);
-        })}
+        <div className="controls"><img src="add.svg" onClick={addByte} /></div>
+        <div className="byteContainer">
+          <ByteArray1 bytes={bytes} setBytes={setBytes} />
+        </div>
+        <div>
+          {bytes.map((b) => {
+            return ' ' + hex(b);
+          })}
+        </div>
       </div>
     </>
   );
